@@ -25,6 +25,8 @@ function levenshteinDistance(w1, w2) {
             tr.appendChild(td);
         }
     }
+
+    document.getElementById("contentHeader").innerText = "levenshtein distance: " + m[w2.length + 1][w1.length + 1];
 }
 
 function initialiseTable(w1, w2) {
