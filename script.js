@@ -18,6 +18,19 @@ document.getElementById("hammingDistanceButton").addEventListener("click", () =>
 });
 
 document.getElementById("longestCommonSubsequenceButton").addEventListener("click", () => {
+    let firstWordInput = document.getElementById("word1");
+    let secondWordInput = document.getElementById("word2");
+    let firstWord = firstWordInput.value.trim();
+    let secondWord = secondWordInput.value.trim();
+
+    if(firstWord.length > 10 || secondWord.length > 10) {
+        let r = confirm("The calculation of subsequences for strings with more than 10 characters " +
+            "can take really long and cause lags and freezes to the site, do you wish to continue?");
+        if(!r) {
+            return;
+        }
+    }
+
     algorithm = 1;
     currentButton.classList.remove("current");
     currentButton = document.getElementById("longestCommonSubsequenceButton");
@@ -75,6 +88,10 @@ function updateContent(click) {
         }
         case 1: {
             longestCommonSubsequence(firstWord, secondWord);
+            break;
+        }
+        case 2: {
+            levenshteinDistance(firstWord, secondWord);
             break;
         }
     }
