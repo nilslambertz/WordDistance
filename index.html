@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Distance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="algorithms/hammingDistanceScript.js" defer></script>
+    <script src="algorithms/longestCommonSubsequenceScript.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="wordDiv">
+        <input type="text" id="word1" placeholder="first word"><input type="text" id="word2" placeholder="second word">
+    </div>
+    <div id="algorithmDiv">
+        <div id="hammingDistanceButton" class="algorithmButton current">hamming distance</div>
+        <div id="longestCommonSubsequenceButton" class="algorithmButton">longest common subsequence</div>
+        <div id="levenshteinDistanceButton" class="algorithmButton">levenshtein distance</div>
+    </div>
+    <div id="main">
+        <div id="contentBox">
+            <div id="contentHeader">
+                Please enter two words and select an algorithm!
+            </div>
+            <div id="innerContent">
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        background by <a href="https://trianglify.io/" target="_blank">trianglify.io</a> &#10084;&#65039;
+    </div>
+</body>
+</html>
