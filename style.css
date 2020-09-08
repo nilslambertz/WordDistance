@@ -94,7 +94,7 @@ a:hover {
     font-size: 20px;
     overflow: auto;
     color: white;
-    height: calc(100% - 40px);
+    height: calc(100% - 20px);
 }
 
 #contentHeader {
